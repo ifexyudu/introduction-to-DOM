@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 8</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10">
+
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Fruit List</h2>
+
+    <ul id="fruitList" class="space-y-2"></ul>
+
+    <script>
+      const fruits = ["Mango", "Banana", "Pineapple", "Watermelon", "Orange"];
+
+      const list= document.getElementById("fruitList")
+      for (let i = 0; i < fruits.length; i++){
+         
+        const newList= document.createElement("li")
+        newList.textContent= fruits[i]
+        newList.classList.add("bg-gray-100","rounded-lg","px-4","py-2","text-gray-700","text-sm")
+        list.appendChild(newList)
+      }
+     
+    </script>
+
+  </body>
+</html>
